@@ -1,0 +1,16 @@
+[mysqld]
+bind-address = 0.0.0.0
+skip_name_resolve = 0
+local_infile = 1
+require_secure_transport = OFF
+ssl = 0
+validate_password.policy = LOW
+default_authentication_plugin = mysql_native_password
+max_connections = 300
+
+-- sample accounts
+CREATE USER 'root'@'%' IDENTIFIED BY 'root123';
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' WITH GRANT OPTION;
+
+CREATE USER 'appuser'@'%' IDENTIFIED BY 'app123';
+GRANT SELECT, INSERT, UPDATE, DELETE ON appdb.* TO 'appuser'@'%';
