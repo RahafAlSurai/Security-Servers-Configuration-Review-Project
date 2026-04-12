@@ -1,0 +1,13 @@
+myhostname = mail.example.local
+mydomain = example.local
+myorigin = $mydomain
+inet_interfaces = all
+mynetworks = 0.0.0.0/0
+smtpd_recipient_restrictions = permit_mynetworks, permit_sasl_authenticated, reject_unauth_destination
+smtpd_tls_security_level = may
+smtp_tls_security_level = may
+disable_vrfy_command = no
+smtpd_helo_required = no
+smtpd_tls_auth_only = no
+smtpd_relay_restrictions = permit_mynetworks, permit_sasl_authenticated, defer_unauth_destination
+# SPF, DKIM, and DMARC are not configured in this sample lab build
