@@ -1,4 +1,4 @@
--- Database security review checks (run in a controlled lab)
+-- Database security review checks 
 SELECT @@bind_address AS bind_address;
 SHOW VARIABLES LIKE 'require_secure_transport';
 SHOW VARIABLES LIKE 'local_infile';
