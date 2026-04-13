@@ -1,20 +1,20 @@
-# 📘 Security Configuration Review Project
+# Security Configuration Review Project
 
-## 🔷 Project Overview
+## Project Overview
 This project demonstrates the design, configuration, and security review of key enterprise servers, including DNS, Mail, and Database servers. The objective is to identify common security misconfigurations and provide practical recommendations to enhance system security and reduce risk.
 
 ---
 
-## 🏗️ Architecture Overview
+## Architecture Overview
 - DNS Server – Handles domain name resolution  
 - Mail Server – Manages email communication  
 - Database Server – Stores and manages application data  
 
 ---
 
-## 🖥️ Server Analysis
+## Server Analysis
 
-### 🔹 DNS Server
+### DNS Server
 **Description:**  
 The DNS server is responsible for translating domain names into IP addresses.
 
@@ -30,7 +30,7 @@ The DNS server is responsible for translating domain names into IP addresses.
 
 ---
 
-### 🔹 Mail Server
+### Mail Server
 **Description:**  
 The mail server manages sending, receiving, and storing emails.
 
@@ -46,7 +46,7 @@ The mail server manages sending, receiving, and storing emails.
 
 ---
 
-### 🔹 Database Server
+### Database Server
 **Description:**  
 The database server stores and manages structured data for applications.
 
@@ -62,26 +62,26 @@ The database server stores and manages structured data for applications.
 
 ---
 
-## 🔍 Security Testing Approach
+## Security Testing Approach
 - Manual configuration review  
 - Vulnerability scanning (e.g., Nmap)  
 - Misconfiguration analysis  
 
 ---
 
-## 🛠️ Tools Used
+## Tools Used
 - Nmap  
 - Bash scripts (for configuration checks)  
 - VMware (Kali Linux, Windows lab environment)  
 
 ---
 
-## 📊 Key Outcomes
+## Key Outcomes
 - Identified critical security misconfigurations across multiple servers  
 - Provided actionable remediation strategies  
 - Demonstrated a real-world configuration review approach aligned with cybersecurity best practices  
 
 ---
 
-## 🧠 Real-World Relevance
-This project reflects practical configuration review processes used in cybersecurity governance, risk, and compliance (GRC) to ensure systems are secure, compliant, and resilient against potential threats.
+## Real-World Relevance
+This project reflects practical configuration review processes used in cybersecurity to ensure systems are secure, compliant, and resilient against potential threats.
