@@ -1,29 +1,87 @@
-# Security Servers Configuration & Review Project
+# 📘 Security Configuration Review Project
 
-This repository organizes the university project into two linked parts for each server:
+## 🔷 Project Overview
+This project demonstrates the design, configuration, and security review of key enterprise servers, including DNS, Mail, and Database servers. The objective is to identify common security misconfigurations and provide practical recommendations to enhance system security and reduce risk.
 
-1. **Configuration** — a sample lab configuration file showing how the service was set up.
-2. **Security review** — a defensive review file used to detect insecure settings.
-3. **Configuration review report (PDF)** — a professional report with findings, screenshots, impact, and recommendations.
+---
 
-## Included folders
-- DNS-Server
-- Mail-Server
-- Database-Server
+## 🏗️ Architecture Overview
+- DNS Server – Handles domain name resolution  
+- Mail Server – Manages email communication  
+- Database Server – Stores and manages application data  
 
-Each folder contains exactly:
-- one configuration file
-- one review file
-- one PDF report
+---
 
-## Included presentation
-- `Updated_Security_Servers_Project.pptx`
+## 🖥️ Server Analysis
 
-## Important note
-The screenshots inside the PDF reports were generated from the included sample configuration and review files so the repository stays self-contained and easy to upload to GitHub.
+### 🔹 DNS Server
+**Description:**  
+The DNS server is responsible for translating domain names into IP addresses.
 
-## How to upload to GitHub
-1. Create a new repository.
-2. Upload all three server folders, the PowerPoint, and this README.
-3. Commit the files.
-4. Optional repository name: `security-servers-configuration-review`
+**Security Issues Identified:**
+- Open recursion enabled  
+- Unrestricted zone transfers  
+- Lack of logging and monitoring  
+
+**Recommendations:**
+- Disable open recursion  
+- Restrict zone transfers to authorized IP addresses  
+- Enable DNS logging and monitoring  
+
+---
+
+### 🔹 Mail Server
+**Description:**  
+The mail server manages sending, receiving, and storing emails.
+
+**Security Issues Identified:**
+- Missing SPF, DKIM, and DMARC configurations  
+- Weak authentication mechanisms  
+- Unencrypted communication (no TLS)
+
+**Recommendations:**
+- Configure SPF, DKIM, and DMARC  
+- Enforce strong authentication policies  
+- Enable TLS encryption for email transmission  
+
+---
+
+### 🔹 Database Server
+**Description:**  
+The database server stores and manages structured data for applications.
+
+**Security Issues Identified:**
+- Weak or default credentials  
+- Excessive user privileges  
+- Lack of encryption for sensitive data  
+
+**Recommendations:**
+- Enforce strong password policies  
+- Apply the principle of least privilege  
+- Enable encryption at rest and in transit  
+
+---
+
+## 🔍 Security Testing Approach
+- Manual configuration review  
+- Vulnerability scanning (e.g., Nmap)  
+- Misconfiguration analysis  
+
+---
+
+## 🛠️ Tools Used
+- Nmap  
+- Bash scripts (for configuration checks)  
+- VMware (Kali Linux, Windows lab environment)  
+
+---
+
+## 📊 Key Outcomes
+- Identified critical security misconfigurations across multiple servers  
+- Provided actionable remediation strategies  
+- Demonstrated a real-world configuration review approach aligned with cybersecurity best practices  
+
+---
+
+## 🧠 Real-World Relevance
+This project reflects practical configuration review processes used in cybersecurity governance, risk, and compliance (GRC) to ensure systems are secure, compliant, and resilient against potential threats.
